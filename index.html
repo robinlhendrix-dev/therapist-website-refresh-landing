@@ -11,7 +11,7 @@
 <meta property="og:description" content="We rebuild and manage practice websites for independent therapists, so prospective clients can understand your specialties, trust your practice, and schedule without friction.">
 <meta property="og:image" content="images/hero-counseling-session.jpg">
 <meta property="og:type" content="website">
-<!-- Image provenance (Unsplash license): hero-counseling-session.jpg, Vitaly Gariev (photo-1758273240360); video-poster-phone-window.jpg client-supplied (source and license to be confirmed); waiting-room.jpg, Hunter Curtis (photo-1733360485753). Step photos (Unsplash): step-clarify.jpg Debby Hudson (1645309827013); step-rebuild.jpg composite: client-supplied photo of a person holding a phone (source and license to be confirmed) with a client-supplied screenshot of the Kindred Counseling Services site; step-connect.jpg Resume Genius (1698047682091); step-maintain.jpg client-supplied (source and license to be confirmed). Logos and heron are ScaleUp Ventures brand assets. -->
+<!-- Image provenance (Unsplash license): hero-counseling-session.jpg client-supplied (source and license to be confirmed); video-poster-phone-window.jpg client-supplied (source and license to be confirmed); waiting-room.jpg, Hunter Curtis (photo-1733360485753). Step photos (Unsplash): step-clarify.jpg Debby Hudson (1645309827013); step-rebuild.jpg composite: client-supplied photo of a person holding a phone (source and license to be confirmed) with a client-supplied screenshot of the Kindred Counseling Services site; step-connect.jpg Resume Genius (1698047682091); step-maintain.jpg client-supplied (source and license to be confirmed). Logos and heron are ScaleUp Ventures brand assets. -->
 <link rel="icon" href="images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,15 +101,15 @@ em{font-style:italic}
 .hero{padding-top:128px;padding-bottom:var(--s700);overflow:clip;min-height:100svh;display:flex;flex-direction:column;justify-content:center}
 .hero-heron{position:absolute;width:min(720px,70vw);right:-12%;top:-6%;opacity:.16;pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--s300);align-items:center;row-gap:var(--s600)}
-.hero-copy{grid-column:1/span 7;position:relative;z-index:2}
+.hero-copy{grid-column:1/span 6;position:relative;z-index:2}
 .hero h1{font:500 48px/1 var(--display);letter-spacing:-.04em;max-width:680px;margin:var(--s300) 0}
 .hero h1 em{color:var(--orange-text)}
 .hero-lede{font-size:18px;line-height:28px;color:var(--ink-soft);max-width:680px}
 .cta-row{display:flex;gap:var(--s200);align-items:center;flex-wrap:wrap;margin-top:var(--s400)}
-.hero-media{grid-column:8/span 5;position:relative;z-index:1;height:min(72svh,680px);min-height:480px}
-.hero-arch{position:absolute;inset:0;overflow:hidden;border-radius:var(--r-full) var(--r-full) var(--r-3xl) var(--r-3xl);background:var(--plum);box-shadow:0 48px 80px -40px rgba(92,31,61,.6)}
-.hero-arch img{position:absolute;left:0;top:-8%;width:100%;height:116%;object-fit:cover;object-position:56% 50%}
-.hero-ring{position:absolute;inset:-16px;border:1px solid var(--orange);border-radius:var(--r-full) var(--r-full) 36px 36px;opacity:.5;pointer-events:none}
+.hero-media{grid-column:7/span 6;position:relative;z-index:1;height:min(62svh,440px);min-height:360px}
+.hero-arch{position:absolute;inset:0;overflow:hidden;border-radius:var(--r-3xl);background:var(--plum);box-shadow:0 48px 80px -40px rgba(92,31,61,.6)}
+.hero-arch img{position:absolute;left:0;top:-8%;width:100%;height:116%;object-fit:cover;object-position:90% 40%}
+.hero-ring{position:absolute;inset:-16px;border:1px solid var(--orange);border-radius:36px;opacity:.5;pointer-events:none}
 .hero-tag{position:absolute;left:-40px;bottom:48px;background:var(--plum);color:var(--blush);padding:var(--s200) var(--s300);max-width:272px;font:600 24px/32px var(--hand);border-radius:var(--r-xl);box-shadow:0 16px 32px -16px rgba(69,21,45,.6);z-index:2}
 .scroll-cue{position:absolute;left:var(--gutter);bottom:var(--s300);display:none}
 .audience-strip{margin-top:var(--s700);display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--hair-ink)}
@@ -359,8 +359,8 @@ em{font-style:italic}
 @media(min-width:1280px){.tagline p{font-size:60px}.tagline .line{white-space:nowrap}}
 @media(max-width:980px){
   .nav-tag{display:none}
-  .hero-copy{grid-column:1/span 7}
-  .hero-media{grid-column:8/span 5}
+  .hero-copy{grid-column:1/span 6}
+  .hero-media{grid-column:7/span 6}
   .review-card{grid-column:1/span 5}
   .scoreboard{grid-column:6/span 7}
   .form-copy{grid-column:1/span 5}
@@ -369,8 +369,8 @@ em{font-style:italic}
 @media(max-width:760px){
   .hero{padding-top:112px;min-height:0}
   .hero-grid,.review-layout,.form-layout,.faq-wrap{display:block}
-  .hero-media{height:480px;min-height:0;margin-top:var(--s600)}
-  .hero-tag{left:var(--s100);bottom:var(--s300)}
+  .hero-media{height:232px;min-height:0;margin-top:var(--s600);margin-bottom:var(--s400)}
+  .hero-tag{left:var(--s100);bottom:-24px;font-size:20px;line-height:28px;padding:var(--s100) var(--s200);max-width:224px}
   .hero-ring{inset:-8px}
   .audience-strip{grid-template-columns:1fr}
   .audience-strip div,.audience-strip div:first-child{border-left:0;border-top:1px solid var(--hair-ink);padding:var(--s200) 0}
@@ -427,7 +427,7 @@ em{font-style:italic}
         </div>
         <div class="hero-media" data-hero="media">
           <div class="hero-ring" aria-hidden="true"></div>
-          <div class="hero-arch"><img src="images/hero-counseling-session.jpg" alt="A therapist and a client talking in a bright, calm counseling room" width="1800" height="1013" fetchpriority="high"></div>
+          <div class="hero-arch"><img src="images/hero-counseling-session.jpg" alt="A therapist smiling and placing a reassuring hand on a client's shoulder in a bright living space" width="1600" height="1067" fetchpriority="high"></div>
           <div class="hero-tag" data-hero="tag">Clarity before the first conversation.</div>
         </div>
       </div>
@@ -455,7 +455,7 @@ em{font-style:italic}
 
   <section class="video-section" aria-labelledby="video-title">
     <div class="video-stage">
-      <div class="video-poster" data-poster><img src="images/video-poster-phone-window.jpg" alt="" width="1600" height="1066" loading="lazy"><span class="video-label">Video outline | 60 to 90 seconds</span><span class="play" aria-hidden="true"></span><h2 class="video-title" id="video-title" data-split>What prospective clients notice before they contact you</h2></div>
+      <div class="video-poster" data-poster><img src="images/video-poster-phone-window.jpg" alt="" width="1600" height="1066" loading="lazy"><span class="play" aria-hidden="true"></span><h2 class="video-title" id="video-title" data-split>What prospective clients notice before they contact you</h2></div>
       <div class="video-copy" data-reveal><p>A 75-second website review explaining the trust gaps that appear before a prospective client reads your credentials.</p><button class="transcript-toggle" type="button" aria-expanded="false" aria-controls="transcript-website-refresh">Read The Video Transcript</button><div class="transcript-wrap" id="transcript-website-refresh" inert><div class="transcript"><div class="transcript-in"><p>If your website was built years ago and feels like it, prospective clients can sense that before they ever speak with you.</p><p>You should not have to become a designer, copywriter, or technology expert to fix it. ScaleUp clarifies your specialties, improves the scheduling path, and keeps the site current after launch.</p><p>Request a free written review and we will show you the three changes we would prioritize first. If the recommendations make sense, you can choose a time to talk through them.</p></div></div></div></div>
     </div>
   </section>
@@ -643,7 +643,7 @@ em{font-style:italic}
     // Hero intro timeline
     const tl = gsap.timeline({ defaults: { ease: 'expo.out' }, delay: 0.1 });
     tl.from('.nav', { y: -48, autoAlpha: 0, duration: 1.2 }, 0)
-      .from('[data-hero="media"] .hero-arch', { clipPath: 'inset(100% 0% 0% 0% round 9999px 9999px 24px 24px)', duration: 1.6, ease: 'expo.inOut' }, 0.1)
+      .from('[data-hero="media"] .hero-arch', { clipPath: 'inset(100% 0% 0% 0% round 24px)', duration: 1.6, ease: 'expo.inOut' }, 0.1)
       .from('[data-hero="media"] .hero-arch img', { scale: 1.3, duration: 2, ease: 'expo.out' }, 0.1)
       .from('.hero-ring', { scale: 0.9, autoAlpha: 0, duration: 1.6 }, 0.6)
       .from('[data-hero="fade"]', { y: 32, autoAlpha: 0, duration: 1.1, stagger: 0.12 }, 0.5)
