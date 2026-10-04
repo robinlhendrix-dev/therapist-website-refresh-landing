@@ -416,6 +416,16 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
   .hero-sheet{translate:20px 20px}
 }
 
+
+/* Section CTAs */
+.sec-cta{display:flex;justify-content:flex-start;margin-top:var(--s500)}
+.sec-cta.center{justify-content:center}
+.faq-cta{grid-column:6/span 7;margin-top:0}
+.tagline .btn:before,.field.dark .btn:before{background:var(--cream)}
+.tagline .btn:focus-visible,.field.dark .btn:focus-visible{outline-color:var(--gold)}
+@media (hover:hover) and (pointer:fine){.tagline .btn:hover,.field.dark .btn:hover{color:var(--ink)}}
+@media(max-width:760px){.faq-cta{margin-top:var(--s400)}.sec-cta .btn{width:100%}}
+
 /* ============ BREAKPOINTS ============ */
 @media(min-width:768px){
   :root{--gutter:var(--s400)}
@@ -572,6 +582,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
         <p class="intro" data-reveal>You do not need a full redesign to recognize the problem. These are the moments that make a qualified visitor hesitate.</p>
       </div>
       <div class="signal-grid"><article class="signal"><span class="signal-num">Signal 01</span><h3>The mobile experience feels cramped</h3><p>Prospective clients often meet your practice on a phone. Important information should not require pinching, zooming, or hunting.</p></article><article class="signal"><span class="signal-num">Signal 02</span><h3>Your specialties are hard to understand</h3><p>A visitor should quickly know who you help, what you help with, and whether you are accepting new clients.</p></article><article class="signal"><span class="signal-num">Signal 03</span><h3>Scheduling takes too many steps</h3><p>The path from interest to consultation should be obvious, secure, and available outside office hours.</p></article><article class="signal"><span class="signal-num">Signal 04</span><h3>Updates depend on an old vendor</h3><p>Changing a bio, service, or availability notice should not become a ticket that sits for weeks.</p></article><article class="signal"><span class="signal-num">Signal 05</span><h3>You cannot see what the site produces</h3><p>The website should show inquiries, consults, and follow-up activity without requiring a marketing dashboard degree.</p></article></div>
+      <div class="sec-cta" data-reveal><a class="btn" href="#review" data-track="recognition_review">Get A Free Review</a></div>
       </div>
     </div>
   </section>
@@ -580,6 +591,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
     <div class="video-stage">
       <div class="video-poster" data-poster><img src="images/video-poster-phone-window.jpg" alt="" width="1600" height="1066" loading="lazy"><span class="play" aria-hidden="true"></span><h2 class="video-title" id="video-title" data-split>What prospective clients notice before they contact you</h2></div>
       <div class="video-copy" data-reveal><p>A 75-second website review explaining the trust gaps that appear before a prospective client reads your credentials.</p><button class="transcript-toggle" type="button" aria-expanded="false" aria-controls="transcript-website-refresh">Read The Video Transcript</button><div class="transcript-wrap" id="transcript-website-refresh" inert><div class="transcript"><div class="transcript-in"><p>If your website was built years ago and feels like it, prospective clients can sense that before they ever speak with you.</p><p>You should not have to become a designer, copywriter, or technology expert to fix it. ScaleUp clarifies your specialties, improves the scheduling path, and keeps the site current after launch.</p><p>Request a free written review and we will show you the three changes we would prioritize first. If the recommendations make sense, you can choose a time to talk through them.</p></div></div></div></div>
+      <div class="sec-cta center" data-reveal><a class="btn" href="#review" data-track="video_review">Get A Free Review</a></div>
     </div>
   </section>
 
@@ -587,6 +599,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
     <img class="tagline-heron" src="images/scaleup-logo-cream.png" alt="" width="827" height="800">
     <div class="wrap">
       <p data-tagline><span class="line">A better website is not more decoration.</span><span class="line">It is a clearer path to the right client.</span></p>
+      <div class="sec-cta" data-reveal><a class="btn" href="#review" data-track="tagline_review">Get A Free Review</a></div>
     </div>
   </section>
 
@@ -602,6 +615,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
         <article class="step"><div class="step-media"><img src="images/step-rebuild.jpg" alt="A person holding a phone that shows a counseling practice website" width="1000" height="750"></div><div class="step-body"><span class="step-n" aria-hidden="true">02</span><h3>Rebuild</h3><p>Create a fast, mobile-first website with a clear path to scheduling and secure intake.</p></div></article>
         <article class="step"><div class="step-media"><img src="images/step-connect.jpg" alt="A therapist smiling and shaking hands with a new client across a desk" width="1000" height="667"></div><div class="step-body"><span class="step-n" aria-hidden="true">03</span><h3>Connect</h3><p>Wire the site to scheduling, follow-up, and measurement so inquiries do not disappear.</p></div></article>
         <article class="step"><div class="step-media"><img src="images/step-maintain.jpg" alt="A woman smiling and relaxing on a sofa while looking at her phone" width="1000" height="667"></div><div class="step-body"><span class="step-n" aria-hidden="true">04</span><h3>Maintain</h3><p>Keep the site current without putting another technical task back on your list.</p></div></article>
+        <div class="sec-cta center" data-reveal><a class="btn" href="#review" data-track="path_review">Get A Free Review</a></div>
       </div>
     </div>
   </section>
@@ -612,6 +626,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
         <span class="badge">Free written review</span>
         <h3 id="review-value-title" data-split>Your free review answers three questions</h3>
         <ul><li data-reveal>What is weakening trust right now?</li><li data-reveal>Where does the booking path create friction?</li><li data-reveal>Which three changes should come first?</li></ul>
+        <div class="sec-cta" data-reveal><a class="btn" href="#review" data-track="review_value_review">Get A Free Review</a></div>
       </article>
       <aside class="scoreboard" data-reveal>
         <p class="note">What you receive before a sales decision</p>
@@ -630,6 +645,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
         <p class="intro" data-reveal>The problem changes by audience. The capabilities behind the solution stay consistent.</p>
       </div>
       <div class="services"><article class="service" data-reveal><span class="tag">01</span><strong>Website + get found</strong><h3>A practice website prospective clients can understand and find.</h3></article><article class="service" data-reveal><span class="tag">02</span><strong>Online scheduling</strong><h3>A direct route from interest to an available consultation time.</h3></article><article class="service" data-reveal><span class="tag">03</span><strong>Secure intake</strong><h3>HIPAA-secure intake and contact forms for the information you need.</h3></article><article class="service" data-reveal><span class="tag">04</span><strong>Telehealth + portal</strong><h3>A secure place for video sessions and client access.</h3></article><article class="service" data-reveal><span class="tag">05</span><strong>Follow-up</strong><h3>A defined response path so new inquiries do not disappear.</h3></article><article class="service" data-reveal><span class="tag">06</span><strong>Weekly scoreboard</strong><h3>Leads, consults, follow-up, and changes summarized in plain numbers.</h3></article><article class="service" data-reveal><span class="tag">07</span><strong>Paid ads</strong><h3>Google and Facebook campaigns connected to the same client path.</h3></article></div>
+      <div class="sec-cta center" data-reveal><a class="btn" href="#review" data-track="services_review">Get A Free Review</a></div>
     </div>
   </section>
 
@@ -669,6 +685,7 @@ body:after{content:'';position:fixed;inset:0;z-index:90;pointer-events:none;opac
     <div class="wrap faq-wrap">
       <div class="sec-head"><span class="index">04 | Questions</span><h2 id="faq-title" data-split>Know what happens before you choose a time.</h2></div>
       <div class="faq-list" data-reveal><details><summary>Do I need to replace everything?</summary><p>No. The review separates what should stay from what creates friction.</p></details><details><summary>Can you work with my current scheduling system?</summary><p>Usually. The first review identifies what you use now and what must connect to the website.</p></details><details><summary>What happens after I request the review?</summary><p>You can immediately choose a working-session time. The review gives that conversation a concrete starting point.</p></details></div>
+      <div class="sec-cta faq-cta" data-reveal><a class="btn" href="#review" data-track="faq_review">Get A Free Review</a></div>
     </div>
   </section>
 </main>
